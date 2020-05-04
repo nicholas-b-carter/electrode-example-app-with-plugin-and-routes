@@ -1,0 +1,22 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-04T03:10:38.173Z'
+    - electrode-confippet > lodash:
+        patched: '2020-05-04T03:10:38.173Z'
+    - electrode-server > lodash:
+        patched: '2020-05-04T03:10:38.173Z'
+    - electrode-static-paths > lodash:
+        patched: '2020-05-04T03:10:38.173Z'
+    - electrode-server > electrode-confippet > lodash:
+        patched: '2020-05-04T03:10:38.173Z'
+    - electrode-router-resolver-engine > react-redux > lodash:
+        patched: '2020-05-04T03:10:38.173Z'
+    - electrode-router-resolver-engine > redux > lodash:
+        patched: '2020-05-04T03:10:38.173Z'
+    - electrode-server > async-eventemitter > async > lodash:
+        patched: '2020-05-04T03:10:38.173Z'
